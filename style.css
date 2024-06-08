@@ -1,0 +1,107 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1f1f1f;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00ffcc;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.searchBox {
+    padding: 0.75rem;
+    border: 2px solid #00ffcc;
+    background-color: #1f1f1f;
+    color: #00ffcc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.searchBtn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #00ffcc;
+    background-color: #00ffcc;
+    color: #1f1f1f;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.searchBtn:hover {
+    background-color: #1f1f1f;
+    color: #00ffcc;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.recipe-container {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.recipe {
+    background-color: #1f1f1f;
+    border: 2px solid #00ffcc;
+    padding: 1rem;
+    border-radius: 8px;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.recipe h3 {
+    margin-top: 0.5rem;
+    color: #00ffcc;
+}
+
+.recipe p {
+    color: #ccc;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
